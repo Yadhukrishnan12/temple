@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Location</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      padding: 40px 20px;
+    }
+
+    #contact {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      padding: 60px 40px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    #contact > h2 {
+      text-align: center;
+      color: #2c3e50;
+      font-size: 2.2em;
+      margin-bottom: 50px;
+      font-weight: 600;
+      position: relative;
+      padding-bottom: 15px;
+    }
+
+    #contact > h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background: #d4af37;
+    }
+
+    .contact-info {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+
+    .contact-card {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 30px 25px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .contact-card:hover {
+      border-color: #d4af37;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transform: translateY(-3px);
+    }
+
+    .contact-icon {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+      opacity: 0.8;
+    }
+
+    .contact-card h2 {
+      color: #2c3e50;
+      font-size: 1.3em;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .contact-card h3 {
+      color: #34495e;
+      font-size: 1.1em;
+      margin: 20px 0 10px 0;
+      font-weight: 600;
+    }
+
+    .contact-card > p:first-of-type {
+      color: #7f8c8d;
+      font-size: 0.95em;
+      margin-bottom: 15px;
+    }
+
+    .contact-card p {
+      color: #555;
+      line-height: 1.6;
+      font-size: 1em;
+    }
+
+    .contact-card a {
+      color: #3498db;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .contact-card a:hover {
+      color: #2980b9;
+      text-decoration: underline;
+    }
+
+    .location-link {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 24px;
+      background: #d4af37;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 500;
+      transition: background 0.3s;
+      font-size: 0.95em;
+    }
+
+    .location-link:hover {
+      background: #c19b2e;
+      text-decoration: none;
+    }
+
+    .map-section {
+      margin-top: 40px;
+      padding-top: 40px;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    .map-section h3 {
+      color: #2c3e50;
+      font-size: 1.6em;
+      margin-bottom: 25px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .map-container {
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid #e0e0e0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      #contact {
+        padding: 40px 25px;
+      }
+
+      #contact > h2 {
+        font-size: 1.8em;
+        margin-bottom: 35px;
+      }
+
+      .contact-info {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .map-container iframe {
+        height: 350px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 20px 10px;
+      }
+
+      #contact {
+        padding: 30px 20px;
+      }
+
+      #contact > h2 {
+        font-size: 1.5em;
+      }
+
+      .contact-card {
+        padding: 25px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section id="contact">
+    <h2>ബന്ധപ്പെടുക & സ്ഥലം</h2>
+    
+    <div class="contact-info">
+      <div class="contact-card">
+        <div class="contact-icon">📞</div>
+        <h2>Madhu Kuzhikadu</h2>
+        <p>Devasom Manager</p>
+        <h3>ഫോൺ</h3>
+        <p><a href="tel:+916282963155">+91 6282963155</a></p>
+      </div>
+      
+      <div class="contact-card">
+        <div class="contact-icon">📞</div>
+        <h2>Akhil Vellathadom</h2>
+        <p>Devasom Secretary</p>
+        <h3>ഫോൺ</h3>
+        <p><a href="tel:+918113002679">+91 8113002679</a></p>
+      </div>
+      
+      
+      <div class="contact-card">
+        <div class="contact-icon">📍</div>
+        <h3>സ്ഥലം</h3>
+        <p>ശ്രീ വിരാട് വിശ്വബ്രഹ്മ ക്ഷേത്രം<br>വാകത്താനം, കേരളം</p>
+        <a href="https://www.google.com/maps/place/Sree+Virad+Viswabrahma+Temple/" target="_blank" class="location-link">View on Google Maps</a>
+      </div>
+    </div>
+
+    <div class="map-section">
+      <h3>ക്ഷേത്രത്തിന്റെ മാപ്പ്</h3>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.284676379992!2d76.5676161!3d9.4989713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b062f22336a71c5%3A0x804a2e2ca9c33210!2sSree%20Virad%20Viswabrahma%20Temple!5e0!3m2!1sen!2sin!4v1700000000000" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
